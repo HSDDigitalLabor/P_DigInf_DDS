@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS33 [get_ports dac_mclk_ext]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_blck_ext]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_lrclk_ext]
+set_property IOSTANDARD LVCMOS33 [get_ports dac_sdata_ext]
+set_property PACKAGE_PIN P15 [get_ports dac_sdata_ext]
+set_property PACKAGE_PIN R12 [get_ports dac_lrclk_ext]
+set_property PACKAGE_PIN H11 [get_ports dac_blck_ext]
+set_property PACKAGE_PIN L14 [get_ports dac_mclk_ext]

@@ -1,0 +1,62 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "sinus_gen_i2s_transmitter_0_0",
+    "cell_name": "i2s_transmitter_0",
+    "component_reference": "xilinx.com:module_ref:i2s_transmitter:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../P_DigInf_DDS.gen/sources_1/bd/sinus_gen/ip/sinus_gen_i2s_transmitter_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "sinus_gen_i2s_transmitter_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z010" } ],
+        "PACKAGE": [ { "value": "clg225" } ],
+        "PREFHDL": [ { "value": "VHDL" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "VHDL" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../P_DigInf_DDS.gen/sources_1/bd/sinus_gen/ip/sinus_gen_i2s_transmitter_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "bclk": [ { "direction": "in" } ],
+        "lrclk": [ { "direction": "in" } ],
+        "rst": [ { "direction": "in" } ],
+        "data_left": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "data_right": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "sdata": [ { "direction": "out" } ]
+      },
+      "interfaces": {
+        "rst": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "rst" } ]
+          }
+        }
+      }
+    }
+  }
+}
